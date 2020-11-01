@@ -1,0 +1,32 @@
+{
+    "name": "sumantablog/2-factor-authentication",
+    "description": "google authenticator for laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-superadmin", "extension"],
+    "homepage": "https://github.com/sumantablog/2-factor-authentication",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sumanta Kabiraj",
+            "email": "sumantablog@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sumantablog\\LaravelAdmin\\Google\\GoogleAuthenticator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sumantablog\\LaravelAdmin\\Google\\GoogleAuthenticator\\GoogleAuthenticatorServiceProvider"
+            ]
+        }
+    }
+}
